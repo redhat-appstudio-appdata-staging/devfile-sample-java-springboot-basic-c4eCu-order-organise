@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-izsb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dhaynes-tenant/devfile-sample-java-springboot-basic/devfile-sample-java-springboot-basic-izsb@sha256:a88b6294b2dfafb550f1ebb04a0d8c405879a34d20874b448e42b6633b08c7d1
+        name: my-java-springboot
+        resources: {}
+status: {}
